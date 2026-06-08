@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Compass | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleChecklist() {
+            const checklist = document.getElementById("starter-checklist");
+            const button = document.getElementById("checklist-button");
+
+            if (checklist.classList.contains("hidden")) {
+                checklist.classList.remove("hidden");
+                button.textContent = "Hide the quick-start checklist";
+            } else {
+                checklist.classList.add("hidden");
+                button.textContent = "Show the quick-start checklist";
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="page-layout">
+        <aside class = "sidebar">
+            <p class="site-label">Family Compass</p>
+            
+            <nav aria-label="main navigation">
+                <a href="index.html">Home</a>
+                <a href="school-basics.html">School Basics</a>
+                <a href="transportation.html">Transportation</a>
+                <a href="language-support.html">Language Support</a>
+                <a href="technology-help.html">Technology Help</a>
+                <a href="community-resources.html">Community Resources</a>
+                <a href="activities-clubs.html">Activities & Clubs</a>
+                <a href="contact-help.html">Contact & Help</a>
+            </nav>
+        </aside>
+        
+        <div class="content-area">
+            <header> 
+            <h1>Family Compass</h1>
+            <p class="tagline">A resource hub for multilingual families navigating middle school in the United States.</p>
+            </header>
+       
+<main>
+    <section class="hero">
+        <div class="panel">
+            <h2>Welcome</h2>
+            <p>Middle school can feel confusing when the system is new, the language is new, and the information is spread across too many places. Family Compass brings key school and community information together in one simple place.</p>
+            <p>This site is designed for families with students in grades 6-8 who need clear, friendly guidance about school expectations, transportation, technology, language support, activities, and community resources.</p>
+       
+            <button id="checklist-button" onclick="toggleChecklist()">Show the quick-start checklist</button>
+       
+            <div id="starter-checklist" class="hidden callout">
+                <h3>Quick-start checklist</h3>
+                <ul class="checklist">
+                    <li>Learn how attendance and grading work.</li>
+                    <li>Find transportation and arrival information.</li>
+                    <li>Set up parent portal and school communication apps.</li>
+                    <li>Ask about translation, interpretation, and language support.</li>
+                    <li>Explore clubs, sports, tutoring, and community help.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <aside class="callout">
+            <h2>Start here</h2>
+            <p>If your family is new to middle school in the United States, begin with the basics. Learn how attendance, grades, school communication, transportation, and support services usually work.</p>
+            <p>You do not need to understand everything at once. Start with one topic, then come back when you need more help.</p>
+            <a class="button-link" href="school-basics.html">Go to School Basics</a>
+        </aside>
+    </section>
+
+    <section>
+        <h2>What can I find here?</h2>
+        
+        <div class="grid">
+            <article class="card">
+                <h3>School Basics</h3>
+                <p>Attendance, grading, calendars, communication, and what to do when something changes.</p>
+            </article>
+        
+            <article class="card">
+                <h3>Language Support</h3>
+                <p>Translation tools, interpreter requests, multilingual resources, and free apps.</p>
+            </article>
+        
+            <article class="card">
+                <h3>Community Resources</h3>
+                <p>Food assistance, healthcare, housing support, tutoring, and other local services.</p>
+            </article>
+        </div>
+    </section>
+</main>
+
+    <footer>
+     <p>Family Compass is a community resource hub for multilingual families navigating middle school in the United States.</p>
+    </footer>
+    </div>
+</div>
+</body>
+</html>
